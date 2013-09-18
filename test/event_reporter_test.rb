@@ -10,4 +10,6 @@ class EventManagerTest < Minitest::Test
     assert_kind_of EventReporter, er
   end
 
+  def test_
+
 end

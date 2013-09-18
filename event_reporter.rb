@@ -30,6 +30,8 @@ class EventReporter
           elsif command_parts[1] == "clear"
             queue_clear
             puts "Your queue is clear. There are now #{queue_count} items in the queue."
+          elsif command_parts[1] == "print"
+            @queue.empty? ? (puts "Sorry, there's nothing in your queue.") : (puts @queue)  
           end
         when "help"
           if command_parts.length == 1
